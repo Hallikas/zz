@@ -3,8 +3,8 @@
 echo -e "<VirtualHost *:80>\n\tDocumentRoot /var/www/html/glpi\n\n"
 echo -e "\t<Directory /var/www/html/glpi>\n\t\tAllowOverride All\n"
 echo -e "\t\tOrder Allow,Deny\n\t\tAllow from all\n\t</Directory>\n\n"
-echo -e "\tErrorLog /var/log/apache2/error-glpi.log\n\tLogLevel warn\n"
-echo -e "\tCustomLog /var/log/apache2/access-glpi.log combined\n"
+echo -e "\tErrorLog /dev/stderr\n\tLogLevel warn\n"
+echo -e "\tCustomLog /dev/stdout combined\n"
 echo -e "</VirtualHost>"
 ) > /etc/apache2/sites-available/000-default.conf
 
