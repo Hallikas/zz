@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND noninteractive
 EXPOSE 80 443
 
-ADD glpi-10.0.5.tgz /var/www/html/
+ADD glpi-latest.tgz /var/www/html/
 
 RUN \
 	apt-get update && \
