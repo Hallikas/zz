@@ -14,6 +14,7 @@ RUN \
 		php php-mysql php-ldap php-xmlrpc php-curl php-mbstring \
 		php-gd php-imap php-cas php-intl php-zip php-bz2 php-redis \
 		php-dom php-simplexml \
+		composer yarnpkg \
 	&&	chown -R www-data:www-data /var/www/html/
 
 COPY glpi-start.sh /opt/
